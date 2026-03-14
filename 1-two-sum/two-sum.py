@@ -1,7 +1,6 @@
 class Solution:
     def twoSum(self,nums,target):
-        hash_map = {}
-
+        hash_map={}
         for i in range(len(nums)):
             complement = target - nums[i]
             if complement in hash_map:
@@ -9,5 +8,4 @@ class Solution:
             hash_map[nums[i]] = i
 s = Solution()
 print(s.twoSum([2,7,11,15],9))
-
 
